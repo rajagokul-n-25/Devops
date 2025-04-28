@@ -1,12 +1,14 @@
 #SCREEN COMMANDS
 
-#list screen
+#List screen
 screen -ls
 
 #To check screen logs
 screen -r id.screenname
 screen -r 12923.Copilot
 
-#to deattched screen
+#To deattched screen
 Ctrl+A next D
 
+#To scan image using trivy
+trivy image --scanners vuln --severity HIGH,CRITICAL --format json --output frontend.json <image_name>
