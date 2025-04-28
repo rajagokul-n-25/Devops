@@ -1,0 +1,4 @@
+#WINDOWS COMMANDS
+
+Ctrl+L		 --> LockScreen
+Ctrl+Shift+U	 --> Create Duplicate Session in Mobaxterm
