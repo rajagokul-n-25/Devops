@@ -1,0 +1,12 @@
+#SCREEN COMMANDS
+
+#list screen
+screen -ls
+
+#To check screen logs
+screen -r id.screenname
+screen -r 12923.Copilot
+
+#to deattched screen
+Ctrl+A next D
+
