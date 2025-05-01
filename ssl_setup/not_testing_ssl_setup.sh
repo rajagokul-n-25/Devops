@@ -30,7 +30,7 @@ services:
     volumes:
       - ./certbot/www:/var/www/certbot:rw
       - ./certbot/conf:/etc/letsencrypt:rw
-    entrypoint: ["/bin/sh", "-c", "while true; do certbot renew && docker-compose exec webserver nginx -s reload; sleep 12h; done"]
+    entrypoint: ["/bin/sh", "-c", "while true; do certbot renew && docker-compose exec webserver nginx -s reload; sleep 1h; done"]
     restart: always
 
 EOF
