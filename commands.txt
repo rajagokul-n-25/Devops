@@ -12,3 +12,9 @@ Ctrl+A next D
 
 #To scan image using trivy
 trivy image --scanners vuln --severity HIGH,CRITICAL --format json --output frontend.json <image_name>
+
+#find the ipaddress of a domain name
+nsloopup <domain-name>
+
+#Nginx to reload its configuration without stopping the server
+docker-compose exec webserver nginx -s reload
