@@ -18,3 +18,26 @@ nsloopup <domain-name>
 
 #Nginx to reload its configuration without stopping the server
 docker-compose exec webserver nginx -s reload
+
+#git revert command
+git revert <commit_id>
+file1.txt:
+<id>      <commit_msg>
+a1b2c3d-->Initial content
+d4e5f6g-->Feature X implementation
+h7i8j9k-->Bug fix for feature X
+
+git revert h7i8j9k
+#To run above command the HEAD move on previous commit, and also commit revert changs
+file.txt:
+Initial content
+Feature X implementation
+
+a1b2c3d-->Initial commit
+d4e5f6g-->Added feature X
+h7i8j9k-->Fixed bug in feature X
+j0k1l2m-->Reverted "Fixed bug in feature X"
+
+
+
+
